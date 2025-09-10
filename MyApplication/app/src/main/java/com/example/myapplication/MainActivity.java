@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<String> selectedCityAdapter;
 
     int selectedItemi = -1;
-    Object selectedItemObj;
+    long list_content;
+
 
     ArrayList<String> dataList;
 
@@ -58,8 +60,12 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (selectedItemi == position) {
                     selectedItemi = -1;
-                    selectedItemObj = dataList.get(position);
-                    
+                    //list_content = cityList.getSelectedItemId();
+                    //TextView textView = (TextView) view.findViewById(R.id.list_content);//
+                    //String text = textView.getText().toString();
+                    System.out.println("debug print statement");
+
+                    view.setBackgroundColor(Color.BLUE);
                     cityList.setBackgroundColor(Color.WHITE); // Change an attribute of the object
                     cityList.setAdapter(cityAdapter); // displays the adapter
                 } else {
