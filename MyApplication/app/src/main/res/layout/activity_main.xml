@@ -7,11 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <ListView
         android:id="@+id/city_list"
         android:layout_width="match_parent"
+        android:paddingTop="100dp"
         android:layout_height="match_parent">
 
     </ListView>
+
+    <GridLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="add city">
+        </Button>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:text="remove city">
+        </Button>
+
+    </GridLayout>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
