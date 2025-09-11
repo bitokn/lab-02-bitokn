@@ -60,12 +60,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (selectedItemi == position) {
                     selectedItemi = -1;
-                    //list_content = cityList.getSelectedItemId();
-                    //TextView textView = (TextView) view.findViewById(R.id.list_content);//
-                    //String text = textView.getText().toString();
+
                     System.out.println("debug print statement");
 
-                    view.setBackgroundColor(Color.BLUE);
                     cityList.setBackgroundColor(Color.WHITE); // Change an attribute of the object
                     cityList.setAdapter(cityAdapter); // displays the adapter
                 } else {
