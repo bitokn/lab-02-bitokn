@@ -7,6 +7,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -82,15 +83,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Button code for adding cities
+        EditText myEditText = findViewById(R.id.my_edit_text);
         final Button addButton = findViewById(R.id.add_button);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // we will begin by adding a dummy city, "Calgary"
-                String newCityString = "Calgary";
+                String newCityString = myEditText.getText().toString();
+                //String newCityString = "Calgary";
                 dataList.add(newCityString);
                 cityList.setAdapter(cityAdapter);
             }
         });
+
     }
 }
