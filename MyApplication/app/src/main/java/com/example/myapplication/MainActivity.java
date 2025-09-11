@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (selectedItemi == position) {
                     selectedItemi = -1;
+                    public void setBackgroundColor() {
+
+                    }
 
                     System.out.println("debug print statement");
 
