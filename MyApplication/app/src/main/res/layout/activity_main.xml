@@ -25,19 +25,28 @@
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
+        <EditText
+            android:id="@+id/myEditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Add City Name"
+            android:inputType="text" />
+
         <Button
             android:id="@+id/add_button"
-            android:layout_width="125dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:text="add city">
         </Button>
 
         <Button
             android:id="@+id/delete_button"
-            android:layout_width="125dp"
+            android:layout_width="122dp"
             android:layout_height="match_parent"
             android:text="remove city">
         </Button>
+
+
 
     </GridLayout>
 

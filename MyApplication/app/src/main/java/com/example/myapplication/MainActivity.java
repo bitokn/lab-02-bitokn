@@ -80,5 +80,17 @@ public class MainActivity extends AppCompatActivity {
                 cityList.setAdapter(cityAdapter);
             }
         });
+
+        // Button code for adding cities
+        final Button addButton = findViewById(R.id.add_button);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // we will begin by adding a dummy city, "Calgary"
+                String newCityString = "Calgary";
+                dataList.add(newCityString);
+                cityList.setAdapter(cityAdapter);
+            }
+        });
     }
 }
